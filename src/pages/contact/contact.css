@@ -163,3 +163,20 @@
     }
     
 }
+@media only screen and (max-width: 470px) {
+    .envelopeIcon{
+        position: relative;
+        transform:scale(1.4);
+        left: 0px;
+        top: -15px;
+    }
+    .containerIconAni{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .containerSocials{
+        position: relative;
+        right: -15px;
+    }
+}

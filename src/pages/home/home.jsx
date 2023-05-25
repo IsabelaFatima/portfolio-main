@@ -31,7 +31,8 @@ export default function Home() {
           <h2>Olá</h2>
           <h2>Me chamo</h2>
           <h1>Isabela</h1>
-          <h2>
+          
+          <h2 className='typewriter'>
             <Typewriter
             options={{
             strings: ["Desenvolvedora FullStack"],
@@ -39,6 +40,7 @@ export default function Home() {
                         loop: true
                       }}/>
           </h2>
+          
         </div>
 
         <div className='containerLine2'>

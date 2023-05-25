@@ -72,3 +72,16 @@
         background-image: url('../../assets/bgmob.png');
     }
 }
+@media only screen and (max-width: 460px){
+    .container h1{
+       font-size: 5vh;
+    }
+    .container h2{
+        font-size: 3.5vh;
+    }
+}
+@media only screen and (max-width: 324px){
+    .container h2{
+        font-size: 3vh;
+    }
+}

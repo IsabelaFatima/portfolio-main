@@ -1,7 +1,8 @@
 .about {
     background-color: #13141b;
     color: #fdfdfd;
-    margin: 0
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .about div h1 {
@@ -107,10 +108,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .containerAbout {
-        padding-top: 80px;
-    }
-
     .aboutMe {
         flex-direction: column;
         justify-content: center;
