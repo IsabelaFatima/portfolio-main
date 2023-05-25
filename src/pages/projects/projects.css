@@ -1,0 +1,109 @@
+.projects{
+    background-color: #14131b;
+    color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.containerProject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerImgProject{
+    width: 50%;
+    height: 40vh;
+}
+.imgProject{
+    width: 50%;
+}
+
+.buttonDemo{
+    margin: 0 10px;
+    width: 105px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #fdfdfd;
+    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  );
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.buttonDemo:hover{
+    transform: scale(1.2);
+}
+.buttonRepository{
+    margin: 0 10px;
+    width: 105px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #fdfdfd;
+    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  ); 
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.buttonRepository:hover{
+    transform: scale(1.2);
+}
+.links{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Coming Soon */
+.containerImgProjectCO{
+    width: 50%;
+    height: 40vh;
+    border: 1px solid #8c00ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: not-allowed;
+    opacity: 0.5 ;
+}
+.padlock{
+    font-size: 2em;
+}
+.buttonDemoCO{
+    margin: 0 10px;
+    width: 105px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #fdfdfd;
+    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  );
+    transition: all 0.5s ease-in-out;
+    cursor: not-allowed;
+    opacity: 0.5 ;
+}
+.buttonDemoCO:hover{
+    transform: scale(1.2);
+}
+.buttonRepositoryCO{
+    margin: 0 10px;
+    width: 105px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    color: #fdfdfd;
+    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  ); 
+    transition: all 0.5s ease-in-out;
+    cursor: not-allowed;
+    opacity: 0.5 ;
+}
+.buttonRepositoryCO:hover{
+    transform: scale(1.2);
+}
+
+/* */
+@media only screen and (max-width: 992px) {
+    .imgProject{
+        width: 70%;
+    }
+    .containerImgProjectCO{
+        width: 70%;
+        height: 40vh;
+    }
+    
+}
