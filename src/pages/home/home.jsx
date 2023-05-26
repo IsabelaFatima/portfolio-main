@@ -38,7 +38,17 @@ export default function Home() {
                 strings: ["Desenvolvedora FullStack"],
                 autoStart: true,
                 loop: true
-              }} />
+              }} 
+            />
+          </h2>
+          <h2 className='mobTypewriter'>
+            <Typewriter
+              options={{
+                strings: ["Desenvolvedora" , "FullStack"],
+                autoStart: true,
+                loop: true
+              }} 
+            />
           </h2>
 
         </div>
