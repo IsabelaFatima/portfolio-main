@@ -111,7 +111,7 @@
 
 .containerSendMessage{
     color: #fdfdfd;
-    width: 70%;
+    width: 80%;
     height: 60%;
     background-color: #13141b;
     border: 3px solid #8C00FF;
@@ -123,12 +123,18 @@
     position: absolute;
     /* display: none;  */
 }
-.containerclose{
+.containerClose{
     display: flex;
+    justify-content: flex-end;
     align-items: flex-start;
     height: 30px;
     border: none;
     background-color: transparent;
+}
+.closeIconSendMessage{
+    margin: 0 20px;
+    font-size: 5vh;
+    color: #fdfdfd;
 }
 .containerTFMessage{
     height: 50%;
@@ -137,17 +143,14 @@
     justify-content: center;
     align-items: center;
 }
-.closeIconSendMessage{
-    margin-right: 60px;
-    font-size: 5vh;
-    color: #fdfdfd;
+.containerTFMessage p{
+    margin-right: 20px;
 }
 .openedEnvelope{
    font-size: 5vh;
     color: #fdfdfd; 
-    margin-right: 30px;
-    position: relative;
     top: -5px;
+    margin: 0 20px;
 }
 
 
@@ -165,6 +168,8 @@
 }
 @media only screen and (max-width: 470px) {
     .envelopeIcon{
+        background-color: #13141b;
+        padding: 0 5px;
         position: relative;
         transform:scale(1.4);
         left: 0px;

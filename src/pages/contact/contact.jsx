@@ -1,5 +1,5 @@
 import "./contact.css"
-import React, { useRef , useState} from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
     emailjs.sendForm('service_yl448lo', 'template_llrtx0f', form.current, 'UzpZwd2hzdHtMCufe')
       .then((result) => {
-        setVisible(true); 
+        setVisible(true);
         console.log("funcionou")
       }, (error) => {
         alert(error.message)
@@ -28,10 +28,10 @@ function Contact() {
     e.target.reset();
 
   }
-  
-  
 
-  ;
+
+
+    ;
   return (
     <div className="contact">
       <form ref={form} onSubmit={sendEmail} className="form">
@@ -42,13 +42,13 @@ function Contact() {
         </div>
 
         <label for="name">Nome:</label>
-        <input type="text" name="name" placeholder="Digite seu nome..." required/>
+        <input type="text" name="name" placeholder="Digite seu nome..." required />
 
         <label for="email">Email:</label>
-        <input type="email" name="email" placeholder="Digite seu email..." required/>
+        <input type="email" name="email" placeholder="Digite seu email..." required />
 
         <label for="message">Mensagem:</label>
-        <textarea name="message" placeholder="Digite sua Mensagem..." required/>
+        <textarea name="message" placeholder="Digite sua Mensagem..." required />
 
 
         <div className="socials">
@@ -64,29 +64,31 @@ function Contact() {
       </form>
       {visible && (
         <div className="containerSendMessage">
-        <button className="containerclose" onClick={handleClick}>
-          <AiOutlineCloseCircle className="closeIconSendMessage" />
-        </button>
+          <button className="containerClose" onClick={handleClick}>
+            <AiOutlineCloseCircle className="closeIconSendMessage" />
+          </button>
 
-        <span className="containerTFMessage">
-          <motion.div
-            animate={{
-              rotate: [0, 15, 0, -15, 0],
-            }}
-            transition={{
-              duration: 2,
-              ease: "easeInOut",
-              times: [0, 0.2, 0.5, 0.8, 1],
-              repeat: Infinity,
-            }}
-          >
-            <BsFillEnvelopeOpenHeartFill className="openedEnvelope" />
-          </motion.div>
-          Obrigada pela mensagem!!, responderei em breve.</span>
-
-      </div>
+          <span className="containerTFMessage">
+            <motion.div
+              animate={{
+                rotate: [0, 15, 0, -15, 0],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+              }}
+            >
+              <BsFillEnvelopeOpenHeartFill className="openedEnvelope" />
+            </motion.div>
+            <p>
+              Obrigada pela mensagem!!, responderei em breve.
+            </p>
+          </span>
+        </div>
       )}
-      
+
     </div>
   )
 }

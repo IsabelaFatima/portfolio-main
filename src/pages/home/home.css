@@ -78,10 +78,19 @@
     }
     .container h2{
         font-size: 3.5vh;
+        font-weight: 200;
     }
 }
 @media only screen and (max-width: 324px){
     .container h2{
         font-size: 3vh;
+    }
+}
+@media only screen and (max-width: 276px){
+    .container h1{
+       font-size: 4vh;
+    }
+    .container h2{
+        font-size: 2.5vh;
     }
 }
