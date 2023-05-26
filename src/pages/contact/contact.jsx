@@ -53,9 +53,9 @@ function Contact() {
 
         <div className="socials">
           <div className="containerSocials">
-            <span data-text="Visite meu perfil no Github" className="tooltip"><a href="https://www.linkedin.com/in/isabela-fatima-4353601b2/" target="_blanck"><FaLinkedin /></a></span>
-            <span data-text="Entre em contato pelo WhatsApp" className="tooltip"><a href="https://github.com/IsabelaFatima" target="_blanck"><FaGithub /></a></span>
-            <span data-text="Visite meu perfil no Linkedin" className="tooltip"> <a href="https://wa.me/+5541995280760/" target="_blanck"><RiWhatsappFill /></a></span>
+            <span data-text="Visite meu perfil no Github" ><a href="https://www.linkedin.com/in/isabela-fatima-4353601b2/" target="_blanck"><FaLinkedin /></a></span>
+            <span data-text="Entre em contato pelo WhatsApp"><a href="https://github.com/IsabelaFatima" target="_blanck"><FaGithub /></a></span>
+            <span data-text="Visite meu perfil no Linkedin" > <a href="https://wa.me/+5541995280760/" target="_blanck"><RiWhatsappFill /></a></span>
           </div>
           <div className="containerSubmit">
             <input type="submit" value="Enviar" id="inputSend" />
