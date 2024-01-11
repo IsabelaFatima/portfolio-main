@@ -30,7 +30,9 @@
     padding: 1vh 0;
 }
 .form input{   
-    border: 1px solid #13141b; 
+    border: 1px solid #8C00FF; 
+    background-color: #13141b;
+    color: rgba(255, 255, 255, 0.863);    
     width: 80%;
     height: 2em;
     border-radius: 3px;
@@ -44,11 +46,16 @@
 }
 .form textarea{    
     border: 1px solid #13141b; 
+    background-color: #13141b;
+    border: 1px solid #8C00FF; 
+    color: rgba(255, 255, 255, 0.863);
+
     width: 80%;
-    height: 4em;
+    height: 10vh;
     border-radius: 4px;
     text-align: center;
     transition: all 0.5s ease-in-out;
+    resize: none;
 }
 .form textarea:focus{    
     color: #fdfdfd;
@@ -127,6 +134,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+    cursor: pointer;
     height: 30px;
     border: none;
     background-color: transparent;

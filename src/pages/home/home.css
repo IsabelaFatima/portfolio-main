@@ -1,7 +1,9 @@
 
 .home{
-    height: 75vh;
+    min-height: 75vh;
     background-image: url('../../assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: space-between;
