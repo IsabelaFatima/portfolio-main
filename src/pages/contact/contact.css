@@ -1,24 +1,22 @@
 
 .contact{
-    background-image: url(../../assets/bg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 140% 100%;
+    background-color: #191920;
     display: flex;
     justify-content: center; 
     flex-direction: column; 
     align-items: center;  
-    height: 100vh;
-    
+    height: 75vh; 
 }
 .form{ 
-    color: #fdfdfd;  
+    color: #fdfdfd; 
+    background-color: #14141B; 
     width: 50%;
+    height: 85%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #8C00FF;
+    border: 1px solid #020114;
     border-radius: 10px;
 }
 .containerIconAni{
@@ -27,31 +25,29 @@
 }
 
 .form label{
-    padding: 1vh 0;
+    font-size: 11px;
+    padding: 1px 0;
 }
 .form input{   
-    border: 1px solid #8C00FF; 
-    background-color: #13141b;
-    color: rgba(255, 255, 255, 0.863);    
-    width: 80%;
-    height: 2em;
-    border-radius: 3px;
+    border: 1px solid #77b8f5;    
+    background-color: transparent;
+    color: #fdfdfd;   
+    width: 60%;
+    height: 5vh;
+    border-radius: 5px;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
 .form input:focus{   
     color: #fdfdfd;
     background-color: transparent;
-    border: 1px solid #fdfdfd;
 }
 .form textarea{    
-    border: 1px solid #13141b; 
-    background-color: #13141b;
-    border: 1px solid #8C00FF; 
+    background-color: transparent;
+    border: 1px solid #77b8f5;      
     color: rgba(255, 255, 255, 0.863);
-
-    width: 80%;
-    height: 10vh;
+    width: 60%;
+    height: 12vh;
     border-radius: 4px;
     text-align: center;
     transition: all 0.5s ease-in-out;
@@ -60,22 +56,22 @@
 .form textarea:focus{    
     color: #fdfdfd;
     background-color: transparent;
-    border: 1px solid #fdfdfd;
+
 }
 
 #inputSend{
     border-radius: 10px;
     height: 40px;
     width: 70%;
-    background-color: #13141b;
+    background-color: transparent;
     color: #fdfdfd;
-    border: 1px solid #8C00FF;
+    border: 1px solid #77b8f5; 
     transition: all 0.5s ease-in-out;
     margin-right: 3%;
 }
 #inputSend:hover{
     transform: scale(1.1);
-    background-color: #8C00FF;
+    filter: drop-shadow(0 0 1vh  #A9D4FC) ;
 }
 .containerSubmit{
     width: 60%;
@@ -106,10 +102,11 @@
     transition: all 0.5s ease-in-out;
 }
 .socials a:hover{
-    color: #8C00FF;
-    filter: drop-shadow(0 0 3vh  #FF00BF) ;
+    color: #A9D4FC;
+    filter: drop-shadow(0 0 2vh  #A9D4FC) ;
     transform: scale(1.5);
-}
+}   
+
 .envelopeIcon{
     font-size: 4.5vh;
     position: relative;
@@ -118,10 +115,10 @@
 
 .containerSendMessage{
     color: #fdfdfd;
-    width: 80%;
+    width: 65%;
     height: 60%;
     background-color: #13141b;
-    border: 3px solid #8C00FF;
+    border: 2px solid #77b8f5;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -140,7 +137,7 @@
     background-color: transparent;
 }
 .closeIconSendMessage{
-    margin: 0 20px;
+    margin: 0 40px;
     font-size: 5vh;
     color: #fdfdfd;
 }

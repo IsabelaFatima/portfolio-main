@@ -1,5 +1,7 @@
 import { FaLinkedin, FaGithub, FaWhatsapp } from 'react-icons/fa';
 import Typewriter from "typewriter-effect";
+import developer from '../../assets/developer.png'
+
 
 
 import './home.css'
@@ -50,8 +52,11 @@ export default function Home() {
               }} 
             />
           </h2>
-
         </div>
+        
+          <div className='containerDeveloper'>
+            <img className='developer' src={developer} alt="developerimage" />         
+          </div>
 
         <div className='containerLine2'>
           <span className='line2'></span>

@@ -1,53 +1,72 @@
 .projects{
-    background-color: #14131b;
+    overflow-x: hidden;
+    background-color: #191920;
     color: #fdfdfd;
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 .containerProject{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    width: 70%;
+    height: 65vh;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #14141B;
+    padding-bottom: 30px ;
+    margin-bottom: 10px;
 }
-.containerImgProject{
-    width: 65%;
-    height: 50vh;
+.containerProject p{
+    font-size: 10px;
 }
-.imgProject{
-    width: 90%;
-    height: 50vh;
 
+.imgProject{
+    width: 70%;
+    height: 60%;
+    border-radius:20px;
 }
 
 .buttonDemo{
     margin: 0 10px;
-    width: 105px;
-    height: 35px;
+    width: 80px;
+    height: 30px;
     border-radius: 10px;
     border: none;
-    color: #fdfdfd;
-    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  );
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    color: #fdfdfd;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), #C55152);
+    background-origin: border-box;
+    background-clip: padding-box, border-box
 }
 .buttonDemo:hover{
     transform: scale(1.2);
+    filter: drop-shadow(0 0 2px #d2cdf0);
 }
 .buttonRepository{
     margin: 0 10px;
-    width: 105px;
-    height: 35px;
+    width: 90px;
+    height: 30px;
     border-radius: 10px;
     border: none;
     color: #fdfdfd;
-    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  ); 
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    color: #fdfdfd;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), #C55152);
+    background-origin: border-box;
+    background-clip: padding-box, border-box
 }
 .buttonRepository:hover{
     transform: scale(1.2);
+    filter: drop-shadow(0 0 2px #d2cdf0);
 }
 .links{
     text-decoration: none;
@@ -58,7 +77,9 @@
 .containerImgProjectCO{
     width: 60%;
     height: 50vh;
-    border: 1px solid #8c00ff;
+    background-color: #14141B;
+    border: 1px solid #fdfdfd;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,12 +91,13 @@
 }
 .buttonDemoCO{
     margin: 0 10px;
-    width: 105px;
-    height: 35px;
+    width: 80px;
+    height: 30px;
     border-radius: 10px;
     border: none;
     color: #fdfdfd;
-    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  );
+    background-color: #14141B;
+    border: 1px solid #fdfdfd;
     transition: all 0.5s ease-in-out;
     cursor: not-allowed;
     opacity: 0.5 ;
@@ -85,12 +107,13 @@
 }
 .buttonRepositoryCO{
     margin: 0 10px;
-    width: 105px;
-    height: 35px;
+    width: 80px;
+    height: 30px;
     border-radius: 10px;
     border: none;
     color: #fdfdfd;
-    background-image: linear-gradient(to right, #8c00ff ,#FF00BF  ); 
+    background-color: #14141B;
+    border: 1px solid #fdfdfd;
     transition: all 0.5s ease-in-out;
     cursor: not-allowed;
     opacity: 0.5 ;
@@ -102,17 +125,21 @@
 /* */
 @media only screen and (max-width: 992px) {
     
- .containerImgProject{
-    width: 80%;
-}
-      
-      .imgProject{
-        width: 100%;
-
-    }
-    
     .containerImgProjectCO{
         width: 80%;
+    }
+    
+}
+@media only screen and (max-width: 700px) {
+    
+    .imgProject{
+        width: 90%;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .containerProject{
+        height: 50vh;
     }
     
 }
